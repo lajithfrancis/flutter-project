@@ -35,22 +35,20 @@ class OfferPriceDetail {
   final int imageCount;
   final String amount;
   final String currency;
-  String? selectedDropdownOption;
 
-  OfferPriceDetail(
-      {this.offerDetail,
-      required this.imageCount,
-      required this.amount,
-      required this.currency,
-      required this.selectedDropdownOption});
+  OfferPriceDetail({
+    this.offerDetail,
+    required this.imageCount,
+    required this.amount,
+    required this.currency,
+  });
 
   factory OfferPriceDetail.fromJson(Map<String, dynamic> json) {
     return OfferPriceDetail(
-      offerDetail: json['offerDetail'],
-      imageCount: json['imageCount'],
-      amount: json['amount'],
-      currency: json['currency'],
-      selectedDropdownOption: json['selectedDropdownOption'],
+      offerDetail: json['offerDetail'] ?? "",
+      imageCount: json['imageCount'] ?? 0,
+      amount: json['amount'] ?? "0",
+      currency: json['currency'] ?? "",
     );
   }
 
@@ -59,5 +57,5 @@ class OfferPriceDetail {
         "imageCount": imageCount,
         "amount": amount,
         "currency": currency,
-    };
+      };
 }

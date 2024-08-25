@@ -6,14 +6,14 @@ final imagesList = [
   PurchasedM(purchasedDate: "Jun 10", imageDetail: [
     ImageM(
         isDownloaded: false,
-        imageUrl: 'https://picsum.photos/seed/picsum/200/300', id: '1'),
+        imageUrl: 'https://picsum.photos/seed/picsum/200/300', id: '1', parkId: ''),
         
     ImageM(
         isDownloaded: false,
-        imageUrl: 'https://picsum.photos/200/300?grayscale', id: '2'),
+        imageUrl: 'https://picsum.photos/200/300?grayscale', id: '2', parkId: ''),
     ImageM(
         isDownloaded: false,
-        imageUrl: 'https://picsum.photos/200/300/?blur=2', id: '3'),
+        imageUrl: 'https://picsum.photos/200/300/?blur=2', id: '3', parkId: ''),
         
   ]),
   // PurchasedM(purchasedDate: "Jun 7", imageDetail: [
@@ -122,17 +122,17 @@ final offersDropdownList = [
       imageCount: 7,
       amount: '20',
       currency: 'ADE',
-      selectedDropdownOption: ''),
+      ),
   OfferPriceDetail(
       offerDetail: 'Choose 5 images for 30 AED',
       imageCount: 5,
       amount: '30',
       currency: 'ADE',
-      selectedDropdownOption: ''),
+      ),
   OfferPriceDetail(
       offerDetail: 'Choose 20 images for 40 AED',
       imageCount: 20,
       amount: '40',
       currency: 'ADE',
-      selectedDropdownOption: ''),
+      ),
 ];

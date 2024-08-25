@@ -99,6 +99,7 @@ class PaymentSuccessOverlay {
                         ),
                         onPressed: () {
                           overlayEntry?.remove();
+                          Navigator.pop(context);
                         },
                         child: const Text(DIConstants.ViewPurchasesText,
                             style: TextStyle(

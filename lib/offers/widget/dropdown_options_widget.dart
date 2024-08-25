@@ -103,20 +103,21 @@ class _DropdownOptionsWidgetState extends State<DropdownOptionsWidget> {
 
                           setState(() {
                             selectedDropdownOptionIndex = dropdownIndex;
-                            offerDropdownList[dropdownIndex]
-                                .selectedDropdownOption = selectedDpOption;
+                            // offerDropdownList[dropdownIndex]
+                                // .selectedDropdownOption = selectedDpOption;
                           });
-                          Future.delayed(const Duration(milliseconds: 300), () {
-                            widget.onOptionSelected(
-                              offerDropdownList[dropdownIndex]
-                                  .selectedDropdownOption = selectedDpOption,
-                              offerDropdownList[dropdownIndex].imageCount,
-                              offerDropdownList[dropdownIndex].amount +
-                                  '.00' +
-                                  " " +
-                                  offerDropdownList[dropdownIndex].currency,
-                            );
-                          });
+                          // Future.delayed(const Duration(milliseconds: 300), () {
+                          //   widget.onOptionSelected(
+                          //     offerDropdownList[dropdownIndex]
+                          //         .selectedDropdownOption = selectedDpOption,
+                          //     offerDropdownList[dropdownIndex].imageCount,
+                          //     offerDropdownList[dropdownIndex].amount +
+                          //         '.00' +
+                          //         " " +
+                          //         offerDropdownList[dropdownIndex].currency,
+                          //   );
+                          // }
+                          // );
                         },
                       ),
                     );

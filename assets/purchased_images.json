@@ -6,25 +6,29 @@
                 "isDownloaded": false,
                 "imageUrl": "https://picsum.photos/id/237/200/300",
                 "localPath": "",
-                "id": "kjfw"
+                "id": "kjfw",
+                "parkId" : "jhfdkwhedfkew"
             },
             {
                 "imageUrl": "https://picsum.photos/id/238/200/300",
                 "isDownloaded": false,
                  "localPath": "",
-                 "id": "ejwhjdh78"
+                 "id": "ejwhjdh78",
+                 "parkId" : "bcnkehfwjkehf"
               },
               {
                 "imageUrl": "https://picsum.photos/id/239/200/300",
                 "isDownloaded": false,
                  "localPath": "",
-                 "id": "edwewfwefwf"
+                 "id": "edwewfwefwf",
+                 "parkId" : "ncbshdjshfk"
               },
               {
                 "imageUrl": "https://picsum.photos/id/236/200/300",
                 "isDownloaded": false,
                  "localPath": "",
-                 "id": "kdcskjhkhd"
+                 "id": "kdcskjhkhd",
+                 "parkId" : "jhewkhfkhkewf"
               }
             
              
@@ -37,19 +41,22 @@
                 "isDownloaded": false,
                 "imageUrl": "https://picsum.photos/id/235/200/300",
                  "localPath": "",
-                  "id": "kdcskjhkhdew"
+                  "id": "kdcskjhkhdew",
+                  "parkId" : "jkwhkfhkewhkf"
             },
             {
                 "imageUrl": "https://picsum.photos/id/870/200/300?grayscale&blur=2",
                 "isDownloaded": false,
                  "localPath": "",
-                  "id": "ksaDdcskjhkhd"
+                  "id": "ksaDdcskjhkhd",
+                  "parkId" : "qjhekhekwqhe"
               },
               {
                 "imageUrl": "https://picsum.photos/id/872/200/300?grayscale&blur=2",
                 "isDownloaded": false,
                  "localPath": "",
-                  "id": "kdcskjhkhdKJEWDH"
+                  "id": "kdcskjhkhdKJEWDH",
+                  "parkId" : "mnsbdfjhkwh"
               }
         ]
     },
@@ -60,31 +67,36 @@
                 "isDownloaded": false,
                 "imageUrl": "https://picsum.photos/id/874/200/300?grayscale&blur=2",
                  "localPath": "",
-                  "id": "kdcskjhkhjdwbcdsj32"
+                  "id": "kdcskjhkhjdwbcdsj32",
+                  "parkId" : "kjwkhefhef"
             },
             {
                 "imageUrl": "https://picsum.photos/200/300?grayscale",
                 "isDownloaded": false,
                  "localPath": "",
-                  "id": "kewweedcskjhkhd"
+                  "id": "kewweedcskjhkhd",
+                  "parkId" : "kjwkehkjfhwejhr"
               },
               {
                 "imageUrl": "https://picsum.photos/id/870/200/300?grayscale&blur=2",
                 "isDownloaded": false,
                  "localPath": "",
-                  "id": "kdcskjhkhdkjjklje"
+                  "id": "kdcskjhkhdkjjklje",
+                  "parkId" : "wkejrwjkelrjwlkr"
               },
               {
                 "imageUrl": "https://picsum.photos/200/300?grayscale",
                 "isDownloaded": false,
                  "localPath": "",
-                  "id": "kdcskjhkhdkljdhdkd"
+                  "id": "kdcskjhkhdkljdhdkd",
+                  "parkId" : "ewiuowuirouoiwe"
               },
               {
                 "isDownloaded": false,
                 "imageUrl": "https://picsum.photos/seed/picsum/200/300",
                 "localPath": "",
-                 "id": "kdcskjhkhdklqwejkljekwjel"
+                 "id": "kdcskjhkhdklqwejkljekwjel",
+                 "parkId" : "jkwhkhkwjehrkkhw"
             }
         ]
     }

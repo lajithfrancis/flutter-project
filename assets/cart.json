@@ -1,24 +1,67 @@
 [
     {
-      "parkId": "kjwjfljwlef",
+      "parkId": "ahjgjhgjgdf",
       "parkName": "AquaVenture",
       "selectedImageCount": 3,
       "images": [
         {
           "isDownloaded": false,
           "imageUrl": "https://picsum.photos/id/237/200/300",
-          "id": "kjfw",
+          "id": "mnfdjfwe",
           "parkId": "kjwjfljwlef",
-          "amount": 10,
+          "price": "10",
           "currency": "AED",
-          "isSelected": true
+          "isSelected": true,
+          "dateAndTime": "2024-05-10 | 01:40 PM"
+        },
+        {
+          "isDownloaded": false,
+          "imageUrl": "https://picsum.photos/id/235/200/300",
+          "id": "dsfsdfdf",
+          "parkId": "kjwjfljwlef",
+          "price": "12",
+          "currency": "AED",
+          "isSelected": true,
+          "dateAndTime": "2024-06-28 | 12:30 PM"
+        },
+        {
+          "isDownloaded": false,
+          "imageUrl": "https://picsum.photos/id/236/200/300",
+          "id": "fdsfscdscsws",
+          "parkId": "kjwjfljwlef",
+          "price": "17",
+          "currency": "AED",
+          "isSelected": true,
+          "dateAndTime": "2024-02-8 | 1:39 PM"
+        },
+        {
+          "isDownloaded": false,
+          "imageUrl": "https://picsum.photos/id/236/200/300",
+          "id": "cdsffdf",
+          "parkId": "kjwjfljwlef",
+          "price": "15",
+          "currency": "AED",
+          "isSelected": false,
+          "dateAndTime": "2024-09-2 | 2:13 PM"
         }
       ],
       "offers": [
         {
           "offerDetail": "",
           "imageCount": 3,
-          "OfferAmount": 20,
+          "amount": "20",
+          "Currency": "AED"
+        },
+        {
+          "offerDetail": "",
+          "imageCount": 5,
+          "amount": "70",
+          "Currency": "AED"
+        },
+        {
+          "offerDetail": "",
+          "imageCount": 20,
+          "amount": "100",
           "Currency": "AED"
         }
       ]

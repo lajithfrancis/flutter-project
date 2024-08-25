@@ -52,10 +52,10 @@ class _DownloadImageWidgetState extends State<DownloadImageWidget> {
         await file.writeAsBytes(response.bodyBytes);
 
         final params = SaveFileDialogParams(sourceFilePath: file.path);
-        await FlutterFileDialog.saveFile(params: params);
+       final fileDialogResponse = await FlutterFileDialog.saveFile(params: params);
         finalPath = file.path;
 
-        if (finalPath != null) {
+        if (fileDialogResponse != null) {
           setState(() {
             _updateDownloadedStatus(
                 context, sectionIndex, index, true, finalPath);

@@ -10,12 +10,12 @@ class StoreScreen extends StatelessWidget {
         child: Center(
       child: ElevatedButton(
           onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => CartScreen(),
-              ),
-            );
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(
+            //     builder: (context) => CartScreen(),
+            //   ),
+            // );
           },
           child: Text("ADD TO CART")),
     ));
