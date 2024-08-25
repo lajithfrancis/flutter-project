@@ -179,18 +179,19 @@ class _CartScreenState extends State<CartScreen> {
 //subtotal, discount and total calculation logic
   void calculateSubtotalTotalAndDiscount({List<ParkM>? futureData}) {
     double subtotal = 0.0;
-    double discount = 0.0;
+    double totalDiscount = 0.0;
 
     List<ParkM> parkData = widget.isSelectedImageFromStore
         ? widget.parkDataList
         : futureData ?? [];
 
     for (var park in parkData) {
-      
+      double totalCost = 0.0;
+      double discount = 0.0;
       // Calculate the subtotal cost for selected images
       for (var image in park.images) {
         if (image.isSelected == true) {
-          subtotal += double.parse(image.price ?? '');
+          totalCost += double.parse(image.price ?? '');
         }
       }
 
@@ -198,18 +199,15 @@ class _CartScreenState extends State<CartScreen> {
     for (var offer in park.offers) {
       if (offer.imageCount == park.selectedImageCount) {
         double offerAmount = double.parse(offer.amount);
-        discount = subtotal - offerAmount;
+        discount = totalCost - offerAmount;
         print(
             "Park: ${park.parkName}, Selected Images: ${park.selectedImageCount}, Original Cost: $subtotal, Offer Price: ${offerAmount}, Discount: $discount");
       }
     }
-subtotal += subtotal;
+    subtotal += totalCost;
+    totalDiscount += discount;
 
-    setState(() {
-      this.subtotal = subtotal;
-      this.discount = discount;
-      this.total = subtotal - discount;
-    });
+    
 
       // Check for matching offers
       // OfferPriceDetail? applicableOffer;
@@ -232,11 +230,11 @@ subtotal += subtotal;
       // );
     }
     // Set the final subtotal, discount, and total
-    // setState(() {
-    //   this.subtotal = subtotal;
-    //   this.discount = discount;
-    //   this.total = subtotal - discount;
-    // });
+    setState(() {
+      this.subtotal = subtotal;
+      this.discount = totalDiscount;
+      this.total = subtotal - totalDiscount;
+    });
     print(
         "Final Subtotal: $subtotal, Final Discount: $discount, Final Total: $total");
   }
