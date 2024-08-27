@@ -55,46 +55,45 @@ class _CartScreenState extends State<CartScreen> {
       });
     }
    
-   mapInitialData();
+  //  mapInitialData();
   }
 
  //copy of parkDataList to store the initial state
-  void mapInitialData() {
-     initialParkData = widget.parkDataList.map((park) {
-      return ParkM(
-        parkId: park.parkId,
-        parkName: park.parkName,
-        selectedImageCount: park.selectedImageCount,
-        images: park.images.map((image) {
-          return ImageM(id: image.id, isSelected: image.isSelected, imageUrl: image.imageUrl, parkId: image.parkId);
-        }).toList(),
-        offers: park.offers.map((offer) {
-          return OfferPriceDetail(imageCount: offer.imageCount, amount: offer.amount, currency: offer.currency);
-        }).toList(),
-      );
-    }).toList();
+  // void mapInitialData() {
+  //    initialParkData = widget.parkDataList.map((park) {
+  //     return ParkM(
+  //       parkId: park.parkId,
+  //       parkName: park.parkName,
+  //       selectedImageCount: park.selectedImageCount,
+  //       images: park.images.map((image) {
+  //         return ImageM(id: image.id, isSelected: image.isSelected, imageUrl: image.imageUrl, parkId: image.parkId);
+  //       }).toList(),
+  //       offers: park.offers.map((offer) {
+  //         return OfferPriceDetail(imageCount: offer.imageCount, amount: offer.amount, currency: offer.currency);
+  //       }).toList(),
+  //     );
+  //   }).toList();
 
-  }
+  // }
 
-//while popping to store screen reset the data to initial data
-  void resetToOriginalInitialData(){
-    if (initialParkData != null){
-        for(var data = 0; data < widget.parkDataList.length ; data ++ ){
-          var initialPark = initialParkData[data];
-          var currentPark = widget.parkDataList[data];
-          // Reset selectedImageCount
-          currentPark.selectedImageCount = initialPark.selectedImageCount;
-            for (var j = 0; j < currentPark.images.length; j++) {
-            currentPark.images[j].isSelected = initialPark.images[j].isSelected;
-          }
-        }
-    }
-  }
+// //while popping to store screen reset the data to initial data
+//   void resetToOriginalInitialData(){
+//     if (initialParkData != null){
+//         for(var data = 0; data < widget.parkDataList.length ; data ++ ){
+//           var initialPark = initialParkData[data];
+//           var currentPark = widget.parkDataList[data];
+//           // Reset selectedImageCount
+//           currentPark.selectedImageCount = initialPark.selectedImageCount;
+//             for (var j = 0; j < currentPark.images.length; j++) {
+//             currentPark.images[j].isSelected = initialPark.images[j].isSelected;
+//           }
+//         }
+//     }
+//   }
 
   @override
   void dispose() {
     widget.isSelectedImageFromStore = false;
-    resetToOriginalInitialData();
     super.dispose();
   }
 
