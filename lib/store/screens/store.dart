@@ -1,5 +1,7 @@
 import 'dart:convert';
 import 'package:atlantis_di_photos_app/Cart/screens/cart_screen.dart';
+import 'package:atlantis_di_photos_app/model/store/parkM.dart';
+import 'package:atlantis_di_photos_app/utils/common_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -511,7 +513,9 @@ class _StoreTabState extends State<StoreTab> {
                         ? () {
                             Navigator.of(context)
                                 .push(MaterialPageRoute(builder: (context) {
-                              return CartScreen();
+                              // Sample park data, need to populate this with actual data
+                              List<ParkM> parkDataList = dataArray;
+                              return CartScreen(parkDataList: parkDataList, isSelectedImageFromStore: true,);
                             }));
                           }
                         : null,
