@@ -11,6 +11,7 @@ class ImageM {
    bool? isSavedToPhotos;
    String id;
    String? dateAndTime;
+   String parkId;
 
   ImageM({
      this.isSelected,
@@ -25,6 +26,7 @@ class ImageM {
     this.isSavedToPhotos,
     required this.id,
      this.dateAndTime,
+     required this.parkId,
   });
 
   factory ImageM.fromJson(Map<String, dynamic> json) {
@@ -41,6 +43,7 @@ class ImageM {
       isSavedToPhotos: json['isSavedToPhotos'],
       id: json['id'],
       dateAndTime: json['dateAndTime'],
+      parkId: json['parkId'],
     );
   }
 
@@ -58,6 +61,7 @@ class ImageM {
       'isSavedToPhotos': isSavedToPhotos,
       'id': id,
       'dateAndTime': dateAndTime,
+      'parkId': parkId,
     };
   }
 }

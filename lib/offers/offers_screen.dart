@@ -241,12 +241,12 @@ class _OffersScreenState extends State<OffersScreen> {
                 child: GestureDetector(
                   onTap: () {
                     print('add to cart button pressed');
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) =>  CartScreen(),
-                      ),
-                    );
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) =>  CartScreen(),
+                    //   ),
+                    // );
                   },
                   child: Container(
                     height: 46,
