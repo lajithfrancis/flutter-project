@@ -1,12 +1,17 @@
+import 'package:atlantis_di_photos_app/Cart/screens/drop_in/drop_in_screen.dart';
 import 'package:atlantis_di_photos_app/Cart/widget/cartAppBar.dart';
 import 'package:atlantis_di_photos_app/Cart/widget/payment_methods_widget.dart';
 import 'package:atlantis_di_photos_app/model/image.dart';
 import 'package:atlantis_di_photos_app/model/offers/offersM.dart';
 import 'package:atlantis_di_photos_app/model/store/parkM.dart';
+import 'package:atlantis_di_photos_app/network/service.dart';
+import 'package:atlantis_di_photos_app/repositories/adyen_drop_in_repository.dart';
 import 'package:atlantis_di_photos_app/utils/colors.dart';
 import 'package:atlantis_di_photos_app/utils/constants.dart';
 import 'package:atlantis_di_photos_app/web_service/get_cart_details.dart';
 import 'package:flutter/material.dart';
+
+final service = Service();
 
 class CartScreen extends StatefulWidget {
   List<ParkM> parkDataList = [];
@@ -21,6 +26,8 @@ class CartScreen extends StatefulWidget {
 }
 
 class _CartScreenState extends State<CartScreen> {
+  DropInScreen dropScreen =
+      DropInScreen(repository: AdyenDropInRepository(service: service));
   List<ImageM>? cartItems;
   List<ParkM> dataFromStore = [];
   List<ParkM> initialParkData = [];
@@ -481,7 +488,10 @@ class _CartScreenState extends State<CartScreen> {
                                 ),
                               ),
                               onPressed: () {
-                                PaymentMethodsOverlay.show(context);
+                                // PaymentMethodsOverlay.show(context);
+                                // Navigator.pushNamed(context, "/dropInScreen");
+                                dropScreen.startDropInSessions(context);
+
                               },
                               child: const Text(DIConstants.purchaseAll,
                                   style: TextStyle(
